@@ -12,8 +12,11 @@ export const company = {
   state: "Maharashtra",
   region: "Thane District, Maharashtra",
 
-  phones: ["+91 98920 84321"],
-  whatsapp: "919892084321",
+phones: [
+  "+91 98920 84321",
+  "+91 90284 81900"
+],
+  whatsapp: "919892084321", 
   email: null,
   hours: "Mon - Sat: 11:00 AM to 8:00 PM",
   mapsLink: "https://maps.app.goo.gl/LAXvCrf3at6R1AR27",
@@ -27,12 +30,7 @@ export const company = {
     categories: 6,
     coverageAreas: 6,
     yearsExperience: Math.max(1, new Date().getFullYear() - 2025),
-    tradePartners: "500+",
+    tradePartners: "100+",
   },
 
-  social: {
-    instagram: null,
-    facebook: null,
-    linkedin: null,
-  },
 };

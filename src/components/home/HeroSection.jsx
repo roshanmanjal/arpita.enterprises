@@ -106,14 +106,13 @@ export default function HeroSection() {
                     </span>
                   </motion.div>
 
-                  <motion.h1
-                     initial={{ opacity: 0, y: 20 }}
-                     animate={{ opacity: 1, y: 0 }}
-                     transition={{ duration: 0.55, delay: 0.1 }}
-                     className="mt-4 text-4xl sm:text-5xl lg:text-[3.4rem] font-black leading-none tracking-tight text-gray-900"
-                   >
-                     Arpita <span className="bg-gradient-to-r from-sky-600 to-blue-600 bg-clip-text text-transparent">Enterprises</span>
-                   </motion.h1>
+                 <motion.h1
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.55, delay: 0.1 }}
+className="mt-4 text-4xl sm:text-5xl lg:text-[3.4rem] font-black leading-none tracking-tight text-gray-900">
+  Arpita Enterprises
+</motion.h1>
 
                   {/* ── ROTATING taglines - SMALLER, SKY GRADIENT TEXT ── */}
                   <div className="mt-4 min-h-[4.5rem] sm:min-h-[3.5rem] relative z-10">

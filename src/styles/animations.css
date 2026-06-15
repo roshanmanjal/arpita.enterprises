@@ -6,26 +6,26 @@
 
 .animated-card:hover,
 .animated-card:focus-within {
-  transform: translateZ(0) scale(1.03);
+  transform: translateZ(0) translateY(-4px) scale(1.02);
   border-color: #38bdf8;
-  box-shadow: 0 20px 40px -10px rgba(14, 165, 233, 0.3);
+  box-shadow: 0 16px 36px -8px rgba(14, 165, 233, 0.25);
   z-index: 20;
 }
 
 .animated-card img {
   transform: translateZ(0);
-  transition: transform 200ms ease-out;
+  transition: transform 300ms ease-out;
 }
 
 .animated-card:hover img,
 .animated-card:focus-within img {
-  transform: translateZ(0) scale(1.03);
+  transform: translateZ(0) scale(1.06);
 }
 
 .skeleton-shimmer {
-  background: linear-gradient(90deg, #1e293b 25%, #334155 37%, #1e293b 63%);
+  background: linear-gradient(90deg, #e0f2fe 25%, #bae6fd 37%, #e0f2fe 63%);
   background-size: 400% 100%;
-  animation: skeleton-shimmer 1.2s ease-in-out infinite;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
 }
 
 .rounded-inherit {
@@ -33,28 +33,22 @@
 }
 
 @keyframes skeleton-shimmer {
-  0% {
-    background-position: 100% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
+  0% { background-position: 100% 0; }
+  100% { background-position: 0 0; }
 }
 
 @keyframes float {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-  50% {
-    transform: translate3d(0, -8px, 0);
-  }
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -10px, 0); }
+}
+
+@keyframes counter-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     animation-duration: 1ms !important;
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
@@ -81,13 +75,18 @@
 
 .beat-on-hover:hover,
 .beat-on-hover:focus-within {
-  animation: hover-beat 520ms ease-in-out both;
-  border-color: rgb(56 189 248);
-  box-shadow: 0 20px 40px -15px rgba(14, 165, 233, 0.3);
+  animation: hover-beat 500ms ease-in-out both;
+  border-color: #38bdf8;
+  box-shadow: 0 16px 36px -12px rgba(14, 165, 233, 0.28);
 }
 
 @keyframes hover-beat {
   0%, 100% { transform: translateZ(0) scale(1); }
-  35% { transform: translateZ(0) scale(1.045); }
-  62% { transform: translateZ(0) scale(0.992); }
+  35% { transform: translateZ(0) scale(1.04); }
+  65% { transform: translateZ(0) scale(0.993); }
+}
+
+/* Counter animation */
+.stat-counter {
+  animation: counter-pulse 2s ease-in-out;
 }

@@ -41,12 +41,18 @@ function RouteElement({ children }) {
 function NotFound() {
   return (
     <PageWrapper>
-      <div className="min-h-screen flex items-center justify-center text-center px-4">
-        <div>
-          <p className="text-6xl mb-4">404</p>
-          <h2 className="text-2xl font-bold text-gray-800">Page Not Found</h2>
-          <a href="/" className="mt-4 inline-block text-blue-600 hover:underline">
-            Go Home
+      <div className="min-h-screen flex items-center justify-center text-center px-4 bg-section-light">
+        <div className="max-w-md">
+          <div className="text-7xl font-black text-sky-200 mb-4">404</div>
+          <h2 className="text-2xl font-bold text-slate-900 mb-2">Page Not Found</h2>
+          <p className="text-slate-600 text-sm mb-6">
+            The page you are looking for does not exist or has been moved.
+          </p>
+          <a
+            href="/"
+            className="btn btn-primary btn-lg"
+          >
+            Back to Home
           </a>
         </div>
       </div>
