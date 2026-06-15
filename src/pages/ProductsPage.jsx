@@ -117,8 +117,8 @@ export default function ProductsPage() {
   Our Distribution Portfolio
 </h1>
             <p className="text-slate-600 mt-2.5 text-sm leading-relaxed max-w-xl">
-              {products.length} products across {brands.length} brands and {categories.length} categories â€”
-              available for retailers, wholesalers, and distribution partners.
+              {products.length} products across {brands.length} brands and {categories.length} categories
+              available for retailers, wholesalers and distribution partners.
             </p>
           </motion.div>
 
