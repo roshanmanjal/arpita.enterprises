@@ -113,10 +113,9 @@ export default function ProductsPage() {
             <span className="text-sky-700 text-xs font-bold uppercase tracking-[0.28em] mb-3 block">
               Product Catalogue
             </span>
-            <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Our{" "}
-              <span className="text-gradient">Distribution Portfolio</span>
-            </h1>
+            <h1 className="text-3xl sm:text-4xl font-black text-black tracking-tight">
+  Our Distribution Portfolio
+</h1>
             <p className="text-slate-600 mt-2.5 text-sm leading-relaxed max-w-xl">
               {products.length} products across {brands.length} brands and {categories.length} categories â€”
               available for retailers, wholesalers, and distribution partners.
