@@ -12,10 +12,15 @@ This platform helps:
 
 The website is designed to:
 ✅ Build business credibility
+
 ✅ Showcase product portfolio
+
 ✅ Highlight distribution network
+
 ✅ Generate inquiries through WhatsApp & Calls
+
 ✅ Support FMCG market expansion
+
 ✅ Improve retailer and brand engagement
 
 
